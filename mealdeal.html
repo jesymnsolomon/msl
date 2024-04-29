@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="assets/styles/bootstrap.css">
+    <link rel="stylesheet/less" type="text/css" href="assets/styles/default.less">
+    <link rel="stylesheet/less" type="text/css" href="assets/styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="assets/styles/custom.less">
+    <link rel="stylesheet/less" type="text/css" href="assets/styles/store.less">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="assets/img/myschoollunchlogo.png" />
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="sidebar-container">
+            <div class="header-1 bottom20">Order Details</div>
+            <div class="field-detail-container">
+                <div class="field-detail space-btwn x-center">
+                    <div class="field-detail-label">Student</div>
+                    <div class="field-detail-value">Johnny Depp</div>
+                </div>
+                <div class="field-detail space-btwn x-center">
+                    <div class="field-detail-label">School</div>
+                    <div class="field-detail-value">Mawson Primary School</div>
+                </div>
+                <div class="field-detail space-btwn x-center">
+                    <div class="field-detail-label">Meal Deal</div>
+                    <div class="field-detail-value"></div>
+                </div>
+                <div class="field-detail space-btwn x-center">
+                    <div class="field-detail-label">Date</div>
+                    <div class="field-detail-value"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <button class="btn default space-btwn default-3 bottom20">
+            <i class="bi bi-arrow-left right20"></i>
+            <div>Back to meal deals</div>
+        </button>
+        <div class="page-container-header">
+            <div class="page-container-steps bottom20">
+                <div class="page-step completed">
+                    <div class="page-step-icon">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <div class="page-step-num">
+                        Step 1
+                    </div>
+                    <div class="page-step-label">
+                        Select school and child
+                    </div>
+                </div>
+                <div class="page-step active">
+                    <div class="page-step-icon">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <div class="page-step-num">
+                        Step 2
+                    </div>
+                    <div class="page-step-label">
+                        Choose a meal deal
+                    </div>
+                </div>
+                <div class="page-step">
+                    <div class="page-step-icon">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <div class="page-step-num">
+                        Step 3
+                    </div>
+                    <div class="page-step-label">
+                        Customize your meal
+                    </div>
+                </div>
+                <div class="page-step">
+                    <div class="page-step-icon">
+                        <i class="bi bi-check-circle-fill"></i>
+                    </div>
+                    <div class="page-step-num">
+                        Step 4
+                    </div>
+                    <div class="page-step-label">
+                        Check out and payment
+                    </div>
+                </div>
+            </div>
+            <div class="page-container-header-texts">
+                <div class="header-2">Mawson Primary School</div>
+                <div class="header-1 orange-text">Meal Deals</div>
+            </div>
+
+        </div>
+        <div class="page-container-actions x-center space-btwn top20">
+            <div class="x-center">
+                <div class="input-icon right20">
+                    <i class="bi bi-calendar input-icon-icon"></i>
+                    <input type="date" class="input-icon-input" name="search-meal-deal" placeholder="Search for meal deals..." />
+                </div>
+                <button class="btn default icon-right">Search <i class="bi bi-search"></i></button>
+            </div>
+            <div class="input-icon right20">
+                <i class="bi bi-search input-icon-icon"></i>
+                <input class="input-icon-input" name="search-meal-deal" placeholder="Search for meal deals..." />
+            </div>
+        </div>
+        <div class="page-container-content">
+            <div class="meal-deal-container"></div>
+        </div>
+    </div>
+
+    <div class="overlay" style="display: none;">
+        <div class="custom-modal" style="width: 500px;">
+            <div class="custom-modal-header">
+                <div class="custom-modal-header-1">Step 1</div>
+                <div class="custom-modal-header-2">Select child and school</div>
+            </div>
+            <div class="custom-modal-body">
+                <div class="form-group col100">
+                    <div class="form-group-row col100 flex">
+                        <div class="form-field form-field-select col100">
+                            <div class="form-field-label">Student</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Select student" />
+                                <lord-icon src="https://cdn.lordicon.com/jrmbtlln.json" trigger="loop" stroke="bold"
+                                    colors="primary:#121331,secondary:#000000" style="width:30px;height:30px"
+                                    class="form-field-icon">
+                                </lord-icon>
+                            </div>
+                            <div class="form-field-options" style="display: none;">
+                                <div class="form-field-option" data-value="011">
+                                    University of Australia
+                                </div>
+                                <div class="form-field-option"  data-value="012">
+                                    University of Australia
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col100 flex">
+                        <div class="form-field col70">
+                            <div class="form-field-label">School</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="School" />
+                                <lord-icon src="https://cdn.lordicon.com/eeouelif.json" trigger="loop" stroke="bold"
+                                    colors="primary:#121331,secondary:#000000" style="width:30px;height:30px"
+                                    class="form-field-icon">
+                                </lord-icon>
+                            </div>
+                            <div class="form-field-options" style="display: none;">
+                                <div class="form-field-option">
+                                    University of Australia
+                                </div>
+                                <div class="form-field-option">
+                                    University of Australia
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-field col30">
+                            <div class="form-field-label">Class</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Class" />
+                                <lord-icon src="https://cdn.lordicon.com/nwkmdrya.json" trigger="loop" stroke="bold"
+                                    colors="primary:#121331,secondary:#000000" style="width:30px;height:30px"
+                                    class="form-field-icon">
+                                </lord-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-modal-footer space-btwn">
+                <button class="btn ghost" data-modal-close>Cancel</button>
+                <button class="btn default icon-right">Okay <i class="bi bi-check-all"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script src="https://kit.fontawesome.com/10b39fbab5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+    <script>
+       $(document).ready(function () {
+            for (let i = 0; i < 10; i++) {
+                $(".meal-deal-container").append(`<div class="card meal-deal">
+            <div class="meal-deal-details flex x-center">
+                <div class="meal-deal-logo">
+                    <img src="assets/img/kidsfood.jpeg" />
+                </div>
+                <div class="meal-deal-title">
+                    Supplier Name
+                </div>
+            </div>
+            <div class="meal-deal-image xy-center">
+                <img src="assets/img/supplierbanner.jpeg" />
+            </div>
+            <div class="meal-deal-details-2 column">
+                 <b class="meal-deal-label">Sushi Meal and Drink Deal</b>
+                 <b class="meal-deal-date"><i class="bi bi-calendar input-icon-icon"></i> August 2, 2024</b>
+              </div>
+        </div>`);
+            }
+        });
+    </script>
+</body>
+
+</html>
