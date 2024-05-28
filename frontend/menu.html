@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/bootstrap.css">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/default.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/custom.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/store.less">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="../assets/img/myschoollunchlogo.png" />
+            </div>
+            <div class="global-search x-center col70 left20">
+                <div class="hero-global-search x-center col15">
+                    <input name="customer-i-need" placeholder="I need" autocomplete="off" />
+                    <div class="hero-global-options" style="display: none;">
+                        <div class="hero-global-option">Catering</div>
+                        <div class="hero-global-option">Catering</div>
+                        <div class="hero-global-option">Catering</div>
+                        <div class="hero-global-option">Catering</div>
+                    </div>
+                </div>
+                <b class="hero-global-simple-text">at</b>
+                <div class="hero-global-search x-center col25">
+                    <input name="customer-address" placeholder="Location" autocomplete="off" />
+                    <div class="hero-global-options" style="display: none;">
+                        <div class="hero-global-option">University of Australia</div>
+                        <div class="hero-global-option">University of Australia</div>
+                        <div class="hero-global-option">University of Australia</div>
+                        <div class="hero-global-option">University of Australia</div>
+                        <div class="hero-global-option">University of Australia</div>
+                    </div>
+                </div>
+                <b class="hero-global-simple-text">on</b>
+                <div class="hero-global-search x-center col15">
+                    <input type="date" />
+                </div>
+                <div class="hero-global-search x-center col15">
+                    <select>
+                        <option>10:00 AM</option>
+                    </select>
+                </div>
+                <button class="btn default icon-right left10">Search <i class="bi bi-search-heart"></i></button>
+            </div>
+            <div class="nav-items left-auto">
+                <div class="nav-item user">
+                    <div>Mawson University <i class="bi bi-person-fill"></i></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="page-container-2">
+        <div class="bookings"></div>
+    </div>
+    <div class="overlay" style="display: none;">
+        <div class="custom-modal" style="width: 500px;">
+            <div class="custom-modal-header y-end">
+                <i class="bi bi-x-circle" data-close-modal></i>
+            </div>
+            <div class="xy-center">
+                <lord-icon src="https://cdn.lordicon.com/gghyubaf.json" trigger="loop"
+                    colors="primary:#0fd673,secondary:#f37123" style="width:150px;height:150px">
+                </lord-icon>
+            </div>
+            <div class="custom-modal-body xy-center column top20">
+                <div class="header-1">Meal added to cart!</div>
+                <div class="xy-center text-center top10">Would you like to add another meal for a different child, or
+                    proceed to checkout?</div>
+            </div>
+            <div class="custom-modal-footer space-btwn top20">
+                <button class="btn col45 icon-right orange">Proceed to check out <i
+                        class="bi bi-check-all"></i></button>
+                <button class="btn default icon-right col45 icon-right">Add another meal <i
+                        class="bi bi-cart-plus"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script src="https://kit.fontawesome.com/10b39fbab5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="../assets/scripts/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (let i = 0; i < 5; i++) {
+                $(".bookings").append(`<div class="booking-category">
+                    <div class="header-1">Sub and Meal Drink</div>
+                    <div class="booking-container"></div>
+                    </div>`);
+                }
+
+            for (let i = 0; i < 10; i++) {
+                $(".booking-container").append(`
+                <div class="supplier-product">
+                        <div class="flex">
+                            <div class="column-1">
+                                <div class="img-container">
+                                    <img src="../assets/img/veggie.jpeg" />
+                                </div>
+                            </div>
+                            <div class="product-body column">
+                                <div class="x-center space-btwn bottom20">
+                                    <h3 class="product-name">Lorem ipsum dolor</h3>
+                                </div>
+                                <p class="product-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <div class="x-center price-section bottom20">
+                                    <button class="btn orange icon-right">Add to Booking <i class="bi bi-plus-circle"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="x-center top10 space-btwn">
+                            <div class="x-center">
+                                <div class="x-center product-detail-section right20">
+                                    <b>Min Qty</b>
+                                    <span class="price">2</span>
+                                </div>
+                                <div class="x-center product-detail-section right20 ">
+                                    <b>Delivery Price</b>
+                                    <span class="price">$12.50</span>
+                                </div>
+                                <div class="x-center product-detail-section right20 ">
+                                    <b>Sell Price</b>
+                                    <span class="price">$12.50</span>
+                                </div>
+                                <div class="x-center product-detail-section right20 ">
+                                    <b>Donation</b>
+                                    <span class="price">$12.50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            `);
+            }
+        });
+    </script>
+</body>
+
+</html>

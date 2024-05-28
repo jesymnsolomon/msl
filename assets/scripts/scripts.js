@@ -1,4 +1,5 @@
 const eventHandlers = function () {
+    console.log($("[data-modal-close]"));
     $("[data-modal-close]").on("click", function () {
         $(".overlay").hide();
         $("body").removeAttr("style");
@@ -82,8 +83,18 @@ const eventHandlers = function () {
 
         $(input).val(text);
         $(input).attr("data-value", value);
-        console.log($(parent));
         $(parent).hide();
+    })
+
+    $(".form-field-input[value]").closest(".form-field").addClass("with-value");
+
+    $(".form-field-input").on("keypress", function () {
+        console.log($(this));
+        if($(this).val()) {
+            $(this).closest(".form-field").addClass("with-value");
+        } else {
+            $(this).closest(".form-field").removeClass("with-value");
+        }
     })
 }
 

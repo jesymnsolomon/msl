@@ -10,6 +10,7 @@
   max-width: 80px;
   width: 80px;
   min-width: 80px;
+  top: 0;
 
   .sidenav-header {
     padding: 20px 25px;
@@ -58,6 +59,8 @@
   .sidenav-item,
   .sidenav-sub-item {
     // color: @green;
+    min-height: 52px;
+    max-height: 52px;
     color: rgb(70, 70, 70);
     padding: 12px 20px;
     font-weight: 600;
@@ -72,7 +75,8 @@
     text-wrap: nowrap;
     text-decoration: none;
 
-    i.bi:first-of-type {
+    i.bi:first-of-type,
+    i.fa-solid:first-of-type {
       -webkit-text-stroke: 0.4px;
       margin-right: 35px;
       font-size: 19px;
@@ -135,9 +139,12 @@
   margin-left: 80px;
 
   &-body {
-    padding: 0 50px;
+    padding: 0px 50px 100px 50px;
   }
 
+  &-header {
+    padding: 20px 10px;
+  }
   &-header-text {
     font-size: 20px;
     margin-left: 10px;
@@ -145,14 +152,15 @@
   }
 
   &-header-sub-text {
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-top: 50px;
     font-size: 17px;
   }
 
   .card {
     background-color: white;
+
+    .portal-container-header-sub-text {
+      margin: 10px 10px 20px 10px;
+    }
   }
 }
 
@@ -191,6 +199,14 @@
       margin-bottom: 5px;
       font-weight: 600;
       color: @orangetext;
+
+      &.green-text {
+        color: @green;
+      }
+
+      &.red-text {
+        color: @redtext;
+      }
     }
 
     &-sub-text {
@@ -199,3 +215,38 @@
     }
   }
 }
+
+.portal-container .card {
+  background-color: white;
+  border-radius: 5px;
+
+  .form-field-label {
+    background-color: white;
+  }
+
+  .form-field-label-shown span {
+    background-color: white;
+  }
+}
+
+.profile {
+  .profile-img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .form-group:not(.tab-page) {
+    padding: 0;
+  }
+}
+
+.child-form {
+  margin-bottom: 50px;
+  border-bottom: 1px solid @lightborder;
+}
+

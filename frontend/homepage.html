@@ -31,10 +31,12 @@
         </nav>
         <div class="hero flex x-center col100">
             <div class="hero-overlay column xy-center col100">
-                <div class="hero-text xy-center column">
-                    <h3 class="hero-header col100">Find your school</h3>
-                </div>
-                <!-- <div class="hero-cards flex col100 xy-center">
+                <div class="hero-organiser-search col100" style="display: none;">
+                    <div class="hero-text xy-center column">
+                        <h3 class="hero-header col100">Run a meal deal at your school</h3>
+                    </div>
+                    <div class=" xy-center col100">
+                        <!-- <div class="hero-cards flex col100 xy-center">
                     <div class="card button-card card-1 float x-center">
                         <div class="gif-cont">
                             <img src="../assets/img/order.gif" />
@@ -54,16 +56,68 @@
                         <i class="bi right-arrow bi-chevron-right"></i>
                     </div>
                 </div> -->
-                <div class="hero-global-search x-center">
-                    <i class="bi bi-geo-alt-fill"></i>
-                    <input name="customer-address" placeholder="Your school here..." autocomplete="off"/>
-                    <button class="btn default icon-right">Search <i class="bi bi-search-heart"></i></button>
-                    <div class="hero-global-options">
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
+                        <div class="hero-global-search x-center col20">
+                            <input name="customer-i-need" placeholder="I need" autocomplete="off" />
+                            <div class="hero-global-options" style="display: none;">
+                                <div class="hero-global-option">Catering</div>
+                                <div class="hero-global-option">Catering</div>
+                                <div class="hero-global-option">Catering</div>
+                                <div class="hero-global-option">Catering</div>
+                            </div>
+                        </div>
+                        <b class="hero-global-simple-text">at</b>
+                        <div class="hero-global-search x-center col30">
+                            <input name="customer-address" placeholder="Location" autocomplete="off" />
+                            <div class="hero-global-options" style="display: none;">
+                                <div class="hero-global-option">University of Australia</div>
+                                <div class="hero-global-option">University of Australia</div>
+                                <div class="hero-global-option">University of Australia</div>
+                                <div class="hero-global-option">University of Australia</div>
+                                <div class="hero-global-option">University of Australia</div>
+                            </div>
+                        </div>
+                        <b class="hero-global-simple-text">on</b>
+                        <div class="hero-global-search x-center col15">
+                            <input type="datetime-local" />
+                        </div>
+                        <button class="btn default icon-right left20">Search <i class="bi bi-search-heart"></i></button>
+                    </div>
+                </div>
+                <div class="hero-parents-search" style="display: none;">
+                    <div class="hero-text xy-center column">
+                        <h3 class="hero-header col100">Find your school</h3>
+                    </div>
+                    <!-- <div class="hero-cards flex col100 xy-center">
+                    <div class="card button-card card-1 float x-center">
+                        <div class="gif-cont">
+                            <img src="../assets/img/order.gif" />
+                        </div>
+                        <div class="column y-center x-start col70">
+                            <p>Place an order</p>
+                        </div>
+                        <i class="bi right-arrow bi-chevron-right"></i>
+                    </div>
+                    <div class="card button-card card-2 float x-center">
+                        <div class="gif-cont">
+                            <img src="../assets/img/school.gif" />
+                        </div>
+                        <div class="column y-center x-start">
+                            <p>Run a meal deal at your school</p>
+                        </div>
+                        <i class="bi right-arrow bi-chevron-right"></i>
+                    </div>
+                </div> -->
+                    <div class="hero-global-search x-center">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <input name="customer-address" placeholder="Your school here..." autocomplete="off" />
+                        <button class="btn default icon-right">Search <i class="bi bi-search-heart"></i></button>
+                        <div class="hero-global-options">
+                            <div class="hero-global-option">University of Australia</div>
+                            <div class="hero-global-option">University of Australia</div>
+                            <div class="hero-global-option">University of Australia</div>
+                            <div class="hero-global-option">University of Australia</div>
+                            <div class="hero-global-option">University of Australia</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +161,7 @@
                 <div class="icon"><lord-icon src="https://cdn.lordicon.com/fzfkoxxo.json" trigger="hover"
                         colors="primary:#181818,secondary:#0fd673" style="width:250px;height:250px">
                     </lord-icon></div>
-                <div class="card-text">All Materials Suppllied</div>
+                <div class="card-text">All Materials Supplied</div>
             </div>
         </div>
     </section>
@@ -117,26 +171,25 @@
         </div>
         <div class="sub-section-2 y-center x-start col50 column">
             <div class="header-text">Join With Us?</div>
-            <div class="x-center button">
-                <lord-icon src="https://cdn.lordicon.com/eaankvsw.json" trigger="hover"
+            <div class="x-center button green">
+                <lord-icon src="https://cdn.lordicon.com/eaankvsw.json" trigger="hover" stroke="bold"
                     style="width:250px;height:250px">
                 </lord-icon>
                 <span>Book a meal deal</span>
             </div>
-            <div class="x-center button" style="border-color: #f37123;">
-                <lord-icon src="https://cdn.lordicon.com/getzhpti.json" trigger="hover"
+            <div class="x-center button orange" style="border-color: #f37123;">
+                <lord-icon src="https://cdn.lordicon.com/getzhpti.json" trigger="hover" stroke="bold"
                     colors="primary:#121331,secondary:#f37123" style="width:250px;height:250px">
                 </lord-icon>
                 <span>Need More Information</span>
             </div>
-            <div class="x-center button" style="border-color: #EC1E30;">
-                <lord-icon src="https://cdn.lordicon.com/vyrtdujn.json" trigger="hover"
+            <div class="x-center button red" style="border-color: #EC1E30;">
+                <lord-icon src="https://cdn.lordicon.com/vyrtdujn.json" trigger="hover" stroke="bold"
                     colors="primary:#121331,secondary:#EC1E30" style="width:250px;height:250px">
                 </lord-icon>
                 <span>Have Questions?</span>
             </div>
         </div>
-
     </section>
     <footer class="flex">
         <div class="col50">
@@ -148,7 +201,8 @@
                 <br><br>
                 My School Lunch operates and displays the images and products of brands with the express permission from
                 the businesses that list their goods and services for sale. We value our brand partners and respect
-                their trademarks and intellectual property. ABN: 59362641847</div>
+                their trademarks and intellectual property. ABN: 59362641847
+            </div>
         </div>
         <div class="col20" style="margin-left: 80px;">
             <div class="header-1 bottom20">more information</div>
@@ -166,7 +220,7 @@
         </div>
     </footer>
 
-    <div class="overlay">
+    <div class="overlay" style="display: none;">
         <div class="custom-modal" style="width: 500px;">
             <div class="custom-modal-header">
                 <div class="logo-container">
@@ -202,6 +256,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="top20 xy-center">
+                    <p>Don't have an account yet? <a class="text-link" href="">Register Now</a></p>
+                </div>
             </div>
             <div class="custom-modal-footer space-btwn">
                 <button class="btn ghost" data-modal-close>Cancel</button>
@@ -213,7 +270,7 @@
     <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
     <script src="https://kit.fontawesome.com/10b39fbab5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <script src="scripts/scripts.js"></script>
+    <script src="../assets/scripts/scripts.js"></script>
 </body>
 
 </html>

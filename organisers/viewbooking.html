@@ -17,85 +17,55 @@
     <link rel="stylesheet/less" type="text/css" href="../assets/styles/style.less">
     <link rel="stylesheet/less" type="text/css" href="../assets/styles/custom.less">
     <link rel="stylesheet/less" type="text/css" href="../assets/styles/store.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/portal.less">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="../assets/img/myschoollunchlogo.png" />
+    <div class="sidenav sidenav-portal">
+        <div class="sidenav-header x-center">
+            <div class="sidenav-logo">
+                <img src="../assets/img/iconlogo.png" />
             </div>
-        </nav>
-    </header>
-    <div class="sidebar">
-        <div class="sidebar-container">
-            <div class="header-1 top20 bottom20">Purchase Order</div>
-            <div class="field-detail-container">
-                <div class="field-detail space-btwn x-center">
-                    <div class="field-detail-value">Johnny's Meal</div>
-                    <div class="field-detail-label">$23.50</div>
-                </div>
-                <div class="field-detail space-btwn x-center">
-                    <div class="field-detail-value">Mike's Meal</div>
-                    <div class="field-detail-label">$23.50</div>
-                </div>
-                <div class="field-detail space-btwn x-center top20">
-                    <div class="field-detail-value">Total</div>
-                    <div class="field-detail-label">$66.50</div>
-                </div>
+            <div class="column">
+                <p style="min-width: fit-content;text-wrap: nowrap;"><span class="green-text">my</span><span
+                        class="orange-text">school</span><span class="red-text">lunch</span></p>
+                <span class="sidenav-subtext">Organiser</span>
             </div>
-            <div class="col100 top20">
-                <button class="col100 btn default">Pay Now</button>
-            </div>
+        </div>
+        <div class="sidenav-items column">
+            <a class="sidenav-item">
+                <i class="bi bi-menu-button-wide-fill"></i>
+                Dashboard
+            </a>
+            <a class="sidenav-item">
+                <i class="bi bi-people"></i>
+                My Profile
+            </a>
+            <a class="sidenav-item active">
+                <i class="bi bi-journal-text"></i>
+                My Bookings
+            </a>
+            <a class="sidenav-item">
+                <i class="bi bi-mortarboard"></i>
+                Refer Another School
+            </a>
+            <a class="sidenav-item top-auto">
+                <i class="bi bi-box-arrow-right"></i>
+                Log Out
+            </a>
         </div>
     </div>
-    <div class="page-container">
-        <button class="btn default space-btwn default-3 bottom20">
-            <i class="bi bi-arrow-left right20"></i>
-            <div>Back to meal deals</div>
-        </button>
-        <div class="page-container-header">
-            <div class="page-container-steps">
-                <div class="page-step completed">
-                    <div class="page-step-icon">
-                        <i class="bi bi-check-circle-fill"></i>
-                    </div>
-                    <div class="page-step-num">
-                        Step 1
-                    </div>
-                    <div class="page-step-label">
-                        Choose child and meal deal
-                    </div>
-                </div>
-                <div class="page-step completed">
-                    <div class="page-step-icon">
-                        <i class="bi bi-check-circle-fill"></i>
-                    </div>
-                    <div class="page-step-num">
-                        Step 2
-                    </div>
-                    <div class="page-step-label">
-                        Customize your meal
-                    </div>
-                </div>
-                <div class="page-step active">
-                    <div class="page-step-icon">
-                        <i class="bi bi-check-circle-fill"></i>
-                    </div>
-                    <div class="page-step-num">
-                        Step 3
-                    </div>
-                    <div class="page-step-label">
-                        Check out and payment
-                    </div>
-                </div>
-            </div>
+    <div class="portal-container">
+        <div class="portal-top-nav y-end x-center">
+            <div class="portal-top-nav-user">Brisbane State School</div>
+            <div class="portal-top-nav-icon"><i class="bi bi-person-fill"></i></div>
         </div>
-        <div class="page-container-content">
-            <div class="checkout-container">
+        <div class="portal-container-body">
+            <div class="checkout-container top20">
                 <div class="checkout-item card">
                     <div class="checkout-main-header space-btwn x-center">
-                        <div class="header-1 orange-text icon-left"><i class="bi bi-person-fill"></i> Johnny's Meal</div>
+                        <div class="header-1 orange-text icon-left"><i class="bi bi-person-fill"></i> Johnny's Meal
+                        </div>
                         <button class="btn default-3 icon-right">Edit Meal <i class="bi bi-pencil-fill"></i></button>
                     </div>
                     <div class="checkout-item-header flex x-start">
@@ -146,38 +116,6 @@
             </div>
         </div>
     </div>
-
-    <div class="overlay">
-        <div class="custom-modal" style="width: 500px;">
-            <div class="custom-modal-header">
-                <div class="custom-modal-header-1">Payment</div>
-                <div class="custom-modal-header-2">Payment Options</div>
-            </div>
-            <div class="custom-modal-body">
-                <div class="form-group col100"></div>
-            </div>
-            <div class="custom-modal-footer space-btwn">
-                <button class="btn ghost" data-modal-close>Cancel</button>
-                <button class="btn default icon-right">Pay <i class="bi bi-check-all"></i></button>
-            </div>
-        </div>
-        <div class="custom-modal" style="width: 500px;">
-            <div class="xy-center top20">
-                <lord-icon src="https://cdn.lordicon.com/gqjpawbc.json" trigger="loop"
-                    colors="primary:#0fd673,secondary:#f37123" style="width:150px;height:150px">
-                </lord-icon>
-            </div>
-            <div class="custom-modal-body xy-center column top20">
-                <div class="header-1">Successfully placed an order!</div>
-            </div>
-            <div class="custom-modal-footer space-btwn top20">
-                <button class="btn col45 icon-left" data-modal-close><i
-                    class="bi bi-arrow-left"></i> Back to home page</button>
-                <button class="btn default icon-right col45 icon-right">See all orders <i
-                        class="bi bi-arrow-right"></i></button>
-            </div>
-        </div>
-    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
     <script src="https://kit.fontawesome.com/10b39fbab5.js" crossorigin="anonymous"></script>
@@ -185,6 +123,15 @@
     <script src="../assets/scripts/scripts.js"></script>
     <script>
         $(document).ready(function () {
+            $(".sidenav-portal").on("mouseover", function () {
+                $(this).addClass("expand");
+            });
+
+            $(".sidenav-portal").on("mouseout", function () {
+                $(this).removeClass("expand");
+                // $(".sidenav-item-container").removeClass("expand");
+            });
+
             for (let i = 0; i < 10; i++) {
                 $(".meal-deal-container").append(``);
             }
