@@ -229,7 +229,7 @@
 
 // Form CSS
 .form-header {
-  padding: 50px 100px 30px 100px;
+  padding: 0px 50px 30px 50px;
 
   h2 {
     font-size: 30px;
@@ -246,6 +246,14 @@
 
   &-row {
     margin-bottom: 20px;
+  }
+
+  &-col .form-field {
+    margin-bottom: 20px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -424,6 +432,12 @@
       }
     }
   }
+
+  &.disable {
+    input {
+      pointer-events: none;
+    }
+  }
 }
 
 .form-field-2 {
@@ -595,6 +609,21 @@
 
   tbody tr:last-of-type td {
     border-bottom: 0;
+  }
+
+  td.with-img {
+    text-align: center;
+  }
+
+  .img-container {
+    width: 10rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -803,7 +832,14 @@
       color: rgb(160, 160, 160);
     }
   }
+
+  .top-nav-right {
+    min-width: fit-content;
+    text-wrap: nowrap;
+    white-space: nowrap;
+  }
 }
+
 @keyframes loading {
   0% {
     transform: rotate(0);

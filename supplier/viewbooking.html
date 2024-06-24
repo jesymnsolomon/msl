@@ -29,11 +29,11 @@
             <div class="column">
                 <p style="min-width: fit-content;text-wrap: nowrap;"><span class="green-text">my</span><span
                         class="orange-text">school</span><span class="red-text">lunch</span></p>
-                <span class="sidenav-subtext">Organiser</span>
+                <span class="sidenav-subtext">Supplier</span>
             </div>
         </div>
         <div class="sidenav-items column">
-            <a class="sidenav-item">
+            <a class="sidenav-item active">
                 <i class="bi bi-menu-button-wide-fill"></i>
                 Dashboard
             </a>
@@ -41,13 +41,17 @@
                 <i class="bi bi-people"></i>
                 My Profile
             </a>
-            <a class="sidenav-item active">
+            <a class="sidenav-item">
                 <i class="bi bi-journal-text"></i>
                 My Bookings
             </a>
             <a class="sidenav-item">
-                <i class="bi bi-mortarboard"></i>
-                Refer Another School
+                <i class="fa-solid fa-list-check"></i>
+                Orders
+            </a>
+            <a class="sidenav-item">
+                <i class="fa-solid fa-utensils"></i>
+                Meal Deals
             </a>
             <a class="sidenav-item top-auto">
                 <i class="bi bi-box-arrow-right"></i>
@@ -56,48 +60,11 @@
         </div>
     </div>
     <div class="portal-container">
-        <div class="portal-top-nav space-btwn x-center">
-            <div class="global-search x-center col80 left20">
-                <div class="hero-global-search x-center col15">
-                    <input name="customer-i-need" placeholder="I need" autocomplete="off" />
-                    <div class="hero-global-options" style="display: none;">
-                        <div class="hero-global-option">Catering</div>
-                        <div class="hero-global-option">Catering</div>
-                        <div class="hero-global-option">Catering</div>
-                        <div class="hero-global-option">Catering</div>
-                    </div>
-                </div>
-                <b class="hero-global-simple-text">at</b>
-                <div class="hero-global-search x-center col25">
-                    <input name="customer-address" placeholder="Location" autocomplete="off" />
-                    <div class="hero-global-options" style="display: none;">
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
-                        <div class="hero-global-option">University of Australia</div>
-                    </div>
-                </div>
-                <b class="hero-global-simple-text">on</b>
-                <div class="hero-global-search x-center col15">
-                    <input type="date" />
-                </div>
-                <div class="hero-global-search x-center col15">
-                    <select>
-                        <option>10:00 AM</option>
-                    </select>
-                </div>
-                <button class="btn default icon-right left10">Search <i class="bi bi-search-heart"></i></button>
-            </div>
-            <div class="top-nav-right x-center orange-text">
-                <div class="portal-top-nav-user">Brisbane State School</div>
-                <div class="portal-top-nav-icon"><i class="bi bi-person-fill"></i></div>
-            </div>
+        <div class="portal-top-nav y-end x-center">
+            <div class="portal-top-nav-user">Subway The Gap</div>
+            <div class="portal-top-nav-icon"><i class="bi bi-person-fill"></i></div>
         </div>
         <div class="portal-container-body">
-            <div class="bottom20">
-                <button class="btn orange icon-left"><i class="bi bi-arrow-left"></i> Back to Bookings</button>
-            </div>
             <div class="kpi-cards x-stretch">
                 <div class="kpi-card kpi-card-icon x-center">
                     <lord-icon src="https://cdn.lordicon.com/wvizcxne.json" trigger="hover"
@@ -148,9 +115,9 @@
             <div class="top20">
                 <div class="card col100">
                     <div class="tab-group x-center">
-                        <div class="tab-item active" data-target="delivery">Delivery</div>
-                        <div class="tab-item" data-target="orders">Orders</div>
-                        <div class="tab-item" data-target="financials">Financials</div>
+                        <div class="tab-item active">Delivery</div>
+                        <div class="tab-item">Orders</div>
+                        <div class="tab-item">Financials</div>
                     </div>
                     <div data-id="delivery" class="form-group tab-page col100 flex">
                         <div class="form-group col30">
@@ -185,13 +152,13 @@
                             <div class="geo-map-container"></div>
                         </div>
                     </div>
-                    <div data-id="orders" class="form-group tab-page col100" style="display: none;">
+                    <div data-id="orders" class="form-group tab-page col100">
                         <div class="column">
                             <div class="header-1">Orders</div>
                             <div class="header-4">This is where you find all of your customers order information. Order Information will be available from when your orders close.</div>
                         </div>
                     </div>
-                    <div data-id="financials" class="form-group tab-page col100" style="display: none;">
+                    <div data-id="financials" class="form-group tab-page col100">
                         <div class="column">
                             <div class="header-1">Financials</div>
                             <div class="header-4">All financial information will be available within 48 hours after the meal deal stops making orders</div>
@@ -247,6 +214,10 @@
                     $(this).removeClass("expand");
                     // $(".sidenav-item-container").removeClass("expand");
                 });
+
+                for (let i = 0; i < 10; i++) {
+                    $(".meal-deal-container").append(``);
+                }
             });
         </script>
 </body>

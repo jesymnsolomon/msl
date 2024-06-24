@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/bootstrap.css">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/default.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/custom.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/portal.less">
+</head>
+
+<body>
+    <div class="sidenav sidenav-portal">
+        <div class="sidenav-header x-center">
+            <div class="sidenav-logo">
+                <img src="../assets/img/iconlogo.png" />
+            </div>
+            <div class="column">
+                <p style="min-width: fit-content;text-wrap: nowrap;"><span class="green-text">my</span><span
+                        class="orange-text">school</span><span class="red-text">lunch</span></p>
+                <span class="sidenav-subtext">Supplier</span>
+            </div>
+        </div>
+        <div class="sidenav-items column">
+            <a class="sidenav-item">
+                <i class="bi bi-menu-button-wide-fill"></i>
+                Dashboard
+            </a>
+            <a class="sidenav-item active">
+                <i class="bi bi-people"></i>
+                My Profile
+            </a>
+            <a class="sidenav-item">
+                <i class="bi bi-journal-text"></i>
+                My Bookings
+            </a>
+            <a class="sidenav-item">
+                <i class="fa-solid fa-list-check"></i>
+                Orders
+            </a>
+            <a class="sidenav-item">
+                <i class="fa-solid fa-utensils"></i>
+                Meal Deals
+            </a>
+            <a class="sidenav-item top-auto">
+                <i class="bi bi-box-arrow-right"></i>
+                Log Out
+            </a>
+        </div>
+    </div>
+    <div class="profile portal-container">
+        <div class="portal-top-nav y-end x-center">
+            <div class="portal-top-nav-user">Subway the Gap</div>
+            <div class="portal-top-nav-icon"><i class="bi bi-person-fill"></i></div>
+        </div>
+        <div class="portal-container-body flex">
+            <div class="col100">
+                <div class="form-header">
+                    <h2>Create Meal Deal</h2>
+                    <p class="grey-text">Create a meal deal to start adding to your store</p>
+                </div>
+                <div class="forms">
+                    <div class="form-set flex col100">
+                        <div class="form-step col30">
+                            <div class="form-step-name">Meal Deal</div>
+                            <div class="form-step-desc">Meal Information and Details</div>
+                        </div>
+                        <div class="form-group col80">
+                            <div class="form-group-row col80 flex">
+                                <div class="form-field-image">
+                                    <input type="file" class="form-field-image-input" style="display: none;" />
+                                    <img src="" />
+                                    <div class="form-field-image-overlay">
+                                        <button data-btn="select-image" class="btn default">Select Image</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-row col80 flex">
+                                <div class="form-field col100">
+                                    <div class="form-field-label">Meal Deal Name</div>
+                                    <input class="form-field-input" placeholder="Product Name" />
+                                </div>
+                            </div>
+                            <div class="form-group-row col80 flex">
+                                <div class="form-field col100">
+                                    <div class="form-field-label">Description</div>
+                                    <textarea class="form-field-input" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group-row col80 flex">
+                                <div class="form-field col25">
+                                    <div class="form-field-label">Price (Ex GST)</div>
+                                    <div class="x-center">
+                                        <i class="form-field-icon bi bi-currency-dollar"></i>
+                                        <input class="form-field-input" placeholder="Price" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-row col80 flex" style="margin-top: 50px;">
+                                <div class="form-field-2 column col100 top10">
+                                    <div class="form-field-label-shown">
+                                        <span>Allergens</span>
+                                    </div>
+                                    <div class="form-field-tags">
+                                        <div class="form-field-tag active">Dairy Free</div>
+                                        <div class="form-field-tag">Egg Free</div>
+                                        <div class="form-field-tag">Gluten Free</div>
+                                        <div class="form-field-tag">Nut Free</div>
+                                        <div class="form-field-tag">Shellfish and Crustaceans Free</div>
+                                    </div>
+                                    <div class="form-field-tags-selected">
+                                        <div class="form-field-tags-selected-item">
+                                            <lord-icon src="https://cdn.lordicon.com/kepuzfuf.json" trigger="hover"
+                                                style="width:50px;height:50px">
+                                            </lord-icon>
+                                            <span>Vegetable</span>
+                                        </div>
+                                        <div class="form-field-tags-selected-item">
+                                            <lord-icon src="https://cdn.lordicon.com/kepuzfuf.json" trigger="hover"
+                                                style="width:50px;height:50px">
+                                            </lord-icon>
+                                            <span>Vegetable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-row col80 flex" style="margin-top: 50px;">
+                                <div class="form-field-2 column col100 top10">
+                                    <div class="form-field-label-shown">
+                                        <span>Dietaries</span>
+                                    </div>
+                                    <div class="form-field-tags">
+                                        <div class="form-field-tag">Halal</div>
+                                        <div class="form-field-tag">Pescaterian</div>
+                                        <div class="form-field-tag">Vegan</div>
+                                        <div class="form-field-tag">Vegetarian</div>
+                                  
+                                        
+                                    <div class="form-field-tags-selected">
+                                        <div class="form-field-tags-selected-item">
+                                            <lord-icon src="https://cdn.lordicon.com/kepuzfuf.json" trigger="hover"
+                                                style="width:50px;height:50px">
+                                            </lord-icon>
+                                            <span>Vegetable</span>
+                                        </div>
+                                        <div class="form-field-tags-selected-item">
+                                            <lord-icon src="https://cdn.lordicon.com/kepuzfuf.json" trigger="hover"
+                                                style="width:50px;height:50px">
+                                            </lord-icon>
+                                            <span>Vegetable</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-set flex col100">
+                        <div class="form-step col30">
+                            <div class="form-step-name">Inclusions</div>
+                            <div class="form-step-desc">What's included in the meal deal?</div>
+                        </div>
+                        <div class="form-group col80 x-center">
+                            <div class="form-group-row col80 flex">
+                                <div class="form-field col30">
+                                    <div class="form-field-label">Inclusion Name</div>
+                                    <input class="form-field-input" placeholder="Inclusion Name" />
+                                </div>
+                                <div class="form-field col50">
+                                    <div class="form-field-label">Product</div>
+                                    <div class="x-center">
+                                        <input class="form-field-input" placeholder="Search for Product" />
+                                        <i class="form-field-icon bi bi-search"></i>
+                                    </div>
+                                </div>
+                                <div class="col20 x-center">
+                                    <button class="btn default icon-right">Add Inclusion <i class="bi bi-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="loading-screen x-center column" style="display: none;">
+        <div class="loading-screen-logo">
+            <img src="../assets/img/iconlogo.png" />
+        </div>
+        <div class="loading-screen-text x-center">
+            <div class="green-text">my</div>
+            <div class="orange-text">school</div>
+            <div class="red-text">lunch</div>
+        </div>
+        <div class="loading-screen-sub-text">Loading...</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script src="https://kit.fontawesome.com/10b39fbab5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="../assets/scripts/scripts.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".sidenav-portal").on("mouseover", function () {
+                $(this).addClass("expand");
+            });
+
+            $(".sidenav-portal").on("mouseout", function () {
+                $(this).removeClass("expand");
+                // $(".sidenav-item-container").removeClass("expand");
+            });
+        });
+    </script>
+</body>
+
+</html>

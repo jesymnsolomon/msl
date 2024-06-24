@@ -69,9 +69,13 @@ const eventHandlers = function () {
         $(input).val(value);
     });
 
-    console.log($(".form-field-select"));
-    $(".form-field-select").on("click", function () {
-        $(this).find(".form-field-options").show();
+    $(".form-field-select").on("click", function (e) {
+        console.log($(e.target).hasClass(".form-field-options"));
+        if ($(e.target).closest(".form-field-option") || $(e.target).hasClass(".form-field-options")) {
+            $(this).find(".form-field-options").hide();
+        } else {
+            $(this).find(".form-field-options").show();
+        }
     })
 
     $(".form-field-option").on("click", function () {
@@ -89,12 +93,19 @@ const eventHandlers = function () {
     $(".form-field-input[value]").closest(".form-field").addClass("with-value");
 
     $(".form-field-input").on("keypress", function () {
-        console.log($(this));
-        if($(this).val()) {
+        if ($(this).val()) {
             $(this).closest(".form-field").addClass("with-value");
         } else {
             $(this).closest(".form-field").removeClass("with-value");
         }
+    })
+
+    $(".tab-item").on("click", function () {
+        const target = $(this).attr("data-target");
+        $(".tab-page").hide();
+        $(`.tab-page[data-id='${target}']`).show();
+        $(".tab-item.active").removeClass("active");
+        $(this).addClass("active");
     })
 }
 
@@ -160,13 +171,13 @@ var progressBar = {
             $(question).addClass("active");
         }, 500);
 
-        if(showStep > 1) {
+        if (showStep > 1) {
             $("#Back").show();
         } else {
             $("#Back").hide();
         }
 
-        if(showStep === 3) {
+        if (showStep === 3) {
             $("#Submit").show();
             $("#Next").hide();
         } else {
@@ -190,13 +201,13 @@ var progressBar = {
             $(question).addClass("active");
         }, 500);
 
-        if(showStep > 1) {
+        if (showStep > 1) {
             $("#Back").show();
         } else {
             $("#Back").hide();
         }
 
-        if(showStep === 3) {
+        if (showStep === 3) {
             $("#Next").hide();
         } else {
             $("#Next").show();

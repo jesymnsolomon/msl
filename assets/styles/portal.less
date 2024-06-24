@@ -1,4 +1,4 @@
-@import url("./global.less");
+ @import url("./global.less");
 
 .sidenav {
   position: fixed;
@@ -11,6 +11,7 @@
   width: 80px;
   min-width: 80px;
   top: 0;
+  z-index: 99999;
 
   .sidenav-header {
     padding: 20px 25px;
@@ -139,12 +140,13 @@
   margin-left: 80px;
 
   &-body {
-    padding: 0px 50px 100px 50px;
+    padding: 30px 30px 100px 30px;
   }
 
   &-header {
     padding: 20px 10px;
   }
+
   &-header-text {
     font-size: 20px;
     margin-left: 10px;
@@ -153,6 +155,7 @@
 
   &-header-sub-text {
     font-size: 17px;
+    margin: 10px 0 15px 10px;
   }
 
   .card {
@@ -175,6 +178,19 @@
   &-icon {
     font-size: 20px;
   }
+
+  .global-search {
+    .hero-global-search {
+      box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.127);
+      background-color: rgb(255, 255, 255);
+      border-radius: 5px;
+
+      input,
+      select {
+        border: 0;
+      }
+    }
+  }
 }
 
 .portal-header {
@@ -190,7 +206,7 @@
     margin-right: 10px;
     border-radius: 5px;
     padding: 25px;
-    max-width: 250px;
+    max-width: 300px;
     box-shadow: 0 1px 8px -3px rgba(0, 0, 0, 0.319);
 
     &-text {
@@ -212,6 +228,38 @@
     &-sub-text {
       font-weight: 500;
       color: rgb(96, 96, 96);
+    }
+
+    &.x-center {
+      background-color: white;
+
+      lord-icon {
+        height: 50px !important;
+        width: 50px !important;
+        margin-right: 20px;
+      }
+    }
+
+    &-icon {
+      b {
+        font-size: 17px;
+        color: black;
+        font-weight: 600;
+      }
+
+      div {
+        color: @greytext;
+      }
+    }
+
+    .emphasize {
+      font-size: 20px;
+    }
+
+    lord-icon {
+      height: 70px;
+      width: 70px;
+      margin-right: 20px;
     }
   }
 }
@@ -250,3 +298,11 @@
   border-bottom: 1px solid @lightborder;
 }
 
+.geo-map-parent {
+  padding: 15px 20px 15px 20px;
+}
+.geo-map-container {
+  background-color: @lightborder;
+  border-radius: 10px;
+  height: 100%;
+}

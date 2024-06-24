@@ -74,6 +74,7 @@
                 <div class="tab-group x-center">
                     <div class="tab-item active">Profile</div>
                     <div class="tab-item">Location</div>
+                    <div class="tab-item">Finance Contact</div>
                     <div class="tab-item">Banking Details</div>
                 </div>
                 <div data-id="profile" class="form-group tab-page col100">
@@ -144,6 +145,75 @@
                         </div>
                     </div>
                 </div>
+                <div data-id="finance" class="form-group tab-page col100">
+                    <div class="form-group-row col100 flex top20">
+                        <div class="form-field col50">
+                            <div class="form-field-label">First Name</div>
+                            <input class="form-field-input" placeholder="First Name" />
+                        </div>
+                        <div class="form-field col50">
+                            <div class="form-field-label">Last Name</div>
+                            <input class="form-field-input" placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group-row col100 flex">
+                        <div class="form-field col50">
+                            <div class="form-field-label">Phone Number</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Phone Number" />
+                            </div>
+                        </div>
+                        <div class="form-field col50">
+                            <div class="form-field-label">Office Number</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Office Number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col100 flex">
+                        <div class="form-field col50 right20">
+                            <div class="form-field-label">Email Address</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Email Address" />
+                                <i class="form-field-icon bi bi-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-id="location" class="tab-page form-group col100">
+                    <div class="form-group-row col100 flex top20">
+                        <div class="form-field col100">
+                            <div class="form-field-label">Full Address</div>
+                            <input class="form-field-input" placeholder="Full Address" />
+                        </div>
+                    </div>
+                    <div class="form-group-row col100 flex top20">
+                        <div class="form-field col50">
+                            <div class="form-field-label">Street or Road Name</div>
+                            <input class="form-field-input" placeholder="Street or Road Name" />
+                        </div>
+                        <div class="form-field col50">
+                            <div class="form-field-label">Suburb</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Suburb" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col100 flex">
+                        <div class="form-field col50">
+                            <div class="form-field-label">Postal Code Address</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Postal Code Address" />
+                            </div>
+                        </div>
+                        <div class="form-field col50">
+                            <div class="form-field-label">Postal Code</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Postal Code" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="xy-center bottom20">
                     <button class="btn default">Submit</button>
                 </div>
@@ -151,6 +221,7 @@
         </div>
     </div>
     <div class="overlay" style="display: none;">
+        <!-- Prompt modal for deleting records -->
         <div class="custom-modal" style="width: 500px;">
             <div class="custom-modal-header y-end">
                 <i class="bi bi-x-circle" data-modal-close=""></i>
@@ -171,6 +242,8 @@
                         class="bi bi-trash"></i></button>
             </div>
         </div>
+
+        <!-- Confirmation modal for successfully updating/deleting records -->
         <div class="custom-modal" style="width: 500px;">
             <div class="custom-modal-header y-end">
                 <i class="bi bi-x-circle" data-modal-close=""></i>
@@ -189,7 +262,9 @@
             </div>
         </div>
     </div>
-    <div class="loading-screen x-center column">
+
+    <!-- Loading Screen  -->
+    <div class="loading-screen x-center column" style="display: none;">
         <div class="loading-screen-logo">
             <img src="../assets/img/iconlogo.png" />
         </div>

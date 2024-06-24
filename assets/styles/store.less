@@ -479,7 +479,8 @@
 }
 
 .booking-container {
-  padding: 2em;
+  padding: 0;
+  padding-top: 2em;
   display: flex;
   flex-wrap: wrap;
 
@@ -556,6 +557,11 @@
       margin-right: 10px;
       color: rgb(159, 159, 159);
       line-height: 19px;
+    }
+
+    lord-icon {
+      height: 25px !important;
+      width: 25px !important;
     }
 
     span {
@@ -671,16 +677,51 @@
 }
 
 .bookings {
+  padding-right: 1em;
+
   .booking-category {
     margin-top: 50px;
   }
 
   .booking-category .header-1 {
     color: @orangetext;
-    margin: 0 40px;
+    margin: 0;
     padding: 0 20px;
     font-size: 20px;
     border-bottom: 3px solid @orangetext;
     padding-bottom: 20px;
+  }
+}
+
+.right-nav {
+  position: fixed;
+  right: 0vw;
+  height: 100vh;
+  width: 20vw;
+  background-color: white;
+  z-index: 9999;
+  top: 70px;
+  // box-shadow: 10px 0px 30px -3px rgba(0, 0, 0, 0.409);
+  transition: 0.7s;
+  padding: 30px;
+
+  .cart .cart-body {
+    max-height: 65vh;
+  }
+
+  .minimize-cart {
+    font-size: 30px;
+    cursor: pointer;
+    color: #3dd077;
+    -webkit-text-stroke: 1px;
+
+    &:hover {
+      color: #282828;
+    }
+  }
+
+  &.show {
+    right: 0;
+    transition: 0.8s;
   }
 }
