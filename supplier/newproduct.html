@@ -37,7 +37,7 @@
                 <i class="bi bi-menu-button-wide-fill"></i>
                 Dashboard
             </a>
-            <a class="sidenav-item active">
+            <a class="sidenav-item">
                 <i class="bi bi-people"></i>
                 My Profile
             </a>
@@ -49,7 +49,7 @@
                 <i class="fa-solid fa-list-check"></i>
                 Orders
             </a>
-            <a class="sidenav-item">
+            <a class="sidenav-item active">
                 <i class="fa-solid fa-utensils"></i>
                 Meal Deals
             </a>
@@ -64,7 +64,7 @@
             <div class="portal-top-nav-user">Subway the Gap</div>
             <div class="portal-top-nav-icon"><i class="bi bi-person-fill"></i></div>
         </div>
-        <div class="portal-container-body flex">
+        <div class="portal-container-body">
             <div class="col100">
                 <div class="form-header">
                     <h2>Create Product</h2>
@@ -105,6 +105,13 @@
                                         <i class="form-field-icon bi bi-currency-dollar"></i>
                                         <input class="form-field-input" placeholder="Price" />
                                     </div>
+                                </div>
+                                <div class="form-field form-field__no-border col50">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <div class="form-field-label-2">Status</div>
                                 </div>
                             </div>
                             <div class="form-group-row col80 flex" style="margin-top: 50px;">
@@ -164,7 +171,112 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-set flex col100">
+                        <div class="form-step col30">
+                            <div class="form-step-name">Units or Variation</div>
+                            <div class="form-step-desc">Product units and variation</div>
+                        </div>
+                        <div class="form-group col80">
+                            <div class="form-group-row col80 x-start" style="margin-bottom: 0px;">
+                                <div class="form-field-image right10">
+                                    <input type="file" class="form-field-image-input" style="display: none;" />
+                                    <img src="" />
+                                    <div class="form-field-image-overlay">
+                                        <button data-btn="select-image" class="btn default">Select Image</button>
+                                    </div>
+                                </div>
+                                <div class="col70">
+                                    <div class="form-group-row x-center col100" style="margin-bottom: 15px;">
+                                        <div class="form-field col50">
+                                            <div class="form-field-label">Product Name</div>
+                                            <input class="form-field-input" placeholder="Product Name" />
+                                        </div>
+                                        <div class="form-field col50">
+                                            <div class="form-field-label">Unit</div>
+                                            <input class="form-field-input" placeholder="Unit" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group-row x-center col100" style="margin-bottom: 15px;">
+                                        <div class="form-field col100">
+                                            <div class="form-field-label">Short Description</div>
+                                            <input class="form-field-input" placeholder="Short Description" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group-row x-center col100">
+                                        <div class="form-field col50">
+                                            <div class="form-field-label">Price (Ex GST)</div>
+                                            <div class="x-center">
+                                                <i class="form-field-icon bi bi-currency-dollar"></i>
+                                                <input class="form-field-input" placeholder="Price" />
+                                            </div>
+                                        </div>
+                                        <div class="form-field form-field__no-border col50">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <div class="form-field-label-2">Status</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group-row col80 flex">
+                                <div class="button-group left-auto x-center">
+                                    <button class="btn default icon-right">Add Unit <i class="bi bi-check"></i></button>
+                                    <button class="btn default-2 icon-right">Clear <i class="bi bi-eraser"></i></button>
+                                </div>
+                            </div>
+                            <div class="top20 col80">
+                                <div class="portal-table bottom20">
+                                    <table class="table-1 dashed col100">
+                                        <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Product Name</th>
+                                                <th>Unit</th>
+                                                <th>Short Description</th>
+                                                <th>Price</th>
+                                                <th>Status</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="img-container">
+                                                        <img src="../assets/img/bagel.jpeg" />
+                                                    </div>
+                                                </td>
+                                                <td class="bold">Bagel</td>
+                                                <td>6 inch long</td>
+                                                <td>Short Description (50 Characters Max)</td>
+                                                <td>$3.00</td>
+                                                <td><label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label></td>
+                                                <td>
+                                                    <div class="button-group x-center">
+                                                        <button class="btn default"><i
+                                                            class="bi bi-pencil-fill"></i></button>
+                                                        <button class="btn red"><i
+                                                                class="bi bi-trash-fill"></i></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="xy-center">
+                <button class="btn default icon-right">Save Changes
+                    <i class="bi bi-check"></i>
+                </button>
             </div>
         </div>
     </div>

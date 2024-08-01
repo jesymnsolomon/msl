@@ -72,12 +72,12 @@
             </div>
             <div class="card col70">
                 <div class="tab-group x-center">
-                    <div class="tab-item active">Profile</div>
-                    <div class="tab-item">Location</div>
-                    <div class="tab-item">Finance Contact</div>
-                    <div class="tab-item">Banking Details</div>
+                    <div class="tab-item active" data-target="profile">Profile</div>
+                    <div class="tab-item" data-target="location">Location</div>
+                    <div class="tab-item" data-target="finance">Finance Contact</div>
+                    <div class="tab-item" data-target="banking">Banking Details</div>
                 </div>
-                <div data-id="profile" class="form-group tab-page col100">
+                <div data-id="profile" class="form-group tab-page col100" style="display: none;">
                     <div class="form-group-row col100 flex top20">
                         <div class="form-field col50">
                             <div class="form-field-label">First Name</div>
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-id="banking" class="form-group tab-page col100">
+                <div data-id="banking" class="form-group tab-page col100" style="display: none;">
                     <div class="form-group-row col100 flex top20">
                         <div class="form-field col50">
                             <div class="form-field-label">Bank</div>
@@ -145,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-id="finance" class="form-group tab-page col100">
+                <div data-id="finance" class="form-group tab-page col100" style="display: none;">
                     <div class="form-group-row col100 flex top20">
                         <div class="form-field col50">
                             <div class="form-field-label">First Name</div>
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                 </div>
-                <div data-id="location" class="tab-page form-group col100">
+                <div data-id="location" class="tab-page form-group col100" style="display: none;">
                     <div class="form-group-row col100 flex top20">
                         <div class="form-field col100">
                             <div class="form-field-label">Full Address</div>
@@ -220,9 +220,9 @@
             </div>
         </div>
     </div>
-    <div class="overlay" style="display: none;">
+    <div class="overlay" >
         <!-- Prompt modal for deleting records -->
-        <div class="custom-modal" style="width: 500px;">
+        <div class="custom-modal" style="width: 500px;" style="display: none;">
             <div class="custom-modal-header y-end">
                 <i class="bi bi-x-circle" data-modal-close=""></i>
             </div>

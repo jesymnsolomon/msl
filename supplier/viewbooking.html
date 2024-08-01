@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="sidenav-items column">
-            <a class="sidenav-item active">
+            <a class="sidenav-item">
                 <i class="bi bi-menu-button-wide-fill"></i>
                 Dashboard
             </a>
@@ -49,7 +49,7 @@
                 <i class="fa-solid fa-list-check"></i>
                 Orders
             </a>
-            <a class="sidenav-item">
+            <a class="sidenav-item active">
                 <i class="fa-solid fa-utensils"></i>
                 Meal Deals
             </a>
@@ -115,9 +115,9 @@
             <div class="top20">
                 <div class="card col100">
                     <div class="tab-group x-center">
-                        <div class="tab-item active">Delivery</div>
-                        <div class="tab-item">Orders</div>
-                        <div class="tab-item">Financials</div>
+                        <div class="tab-item active" data-target="delivery">Delivery</div>
+                        <div class="tab-item" data-target="orders">Orders</div>
+                        <div class="tab-item" data-target="financials">Financials</div>
                     </div>
                     <div data-id="delivery" class="form-group tab-page col100 flex">
                         <div class="form-group col30">
@@ -152,13 +152,13 @@
                             <div class="geo-map-container"></div>
                         </div>
                     </div>
-                    <div data-id="orders" class="form-group tab-page col100">
+                    <div data-id="orders" class="form-group tab-page col100" style="display: none;">
                         <div class="column">
                             <div class="header-1">Orders</div>
                             <div class="header-4">This is where you find all of your customers order information. Order Information will be available from when your orders close.</div>
                         </div>
                     </div>
-                    <div data-id="financials" class="form-group tab-page col100">
+                    <div data-id="financials" class="form-group tab-page col100" style="display: none;">
                         <div class="column">
                             <div class="header-1">Financials</div>
                             <div class="header-4">All financial information will be available within 48 hours after the meal deal stops making orders</div>

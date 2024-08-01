@@ -20,6 +20,44 @@
             <h2>Registration</h2>
             <p class="grey-text">Create an account and register your children</p>
         </div>
+        <div class="badges-popup">
+            <div class="badge-item blue bottom20 pop">
+                <div class="badge-item-text x-center col90">
+                    <i class="bi bi-info-circle-fill"></i>
+                    <div>Fill in the required fields below</div>
+                </div>
+                <div class="badge-item-close-popup xy-center left-auto col10">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+            <div class="badge-item yellow bottom20">
+                <div class="badge-item-text x-center col90">
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    <div>Please fill in all the required fields</div>
+                </div>
+                <div class="badge-item-close-popup xy-center left-auto col10">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+            <div class="badge-item green bottom20">
+                <div class="badge-item-text x-center col90">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <div>Successfully updated records</div>
+                </div>
+                <div class="badge-item-close-popup xy-center left-auto col10">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+            <div class="badge-item red bottom20">
+                <div class="badge-item-text x-center col90">
+                    <i class="bi bi-x-circle-fill"></i>
+                    <div>There was an error submitting request</div>
+                </div>
+                <div class="badge-item-close-popup xy-center left-auto col10">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+            </div>
+        </div>
         <div class="forms">
             <div class="form-set flex col100">
                 <div class="form-step col30">
@@ -143,11 +181,29 @@
         </div>
 
         <div class="button-group form-set xy-center">
-            <button id="add-child-form" class="btn default icon-right">Add More Children <i class="bi bi-plus-lg"></i></button>
+            <button id="add-child-form" class="btn default icon-right">Add More Children <i
+                    class="bi bi-plus-lg"></i></button>
             <button id="submit" class="btn default-2 icon-right">Submit <i class="bi bi-arrow-90deg-right"></i></button>
         </div>
     </div>
-
+    <div class="overlay" style="display: none;">
+        <div class="custom-modal" style="width: 500px;">
+            <div class="custom-modal-header y-end">
+                <i class="bi bi-x-circle" data-modal-close=""></i>
+            </div>
+            <div class="xy-center">
+                <lord-icon src="https://cdn.lordicon.com/ymsapbnv.json" trigger="loop" delay="2000"
+                    colors="primary:#0fd673,secondary:#f37123" style="width:150px;height:150px">
+                </lord-icon>
+            </div>
+            <div class="custom-modal-body xy-center column top20">
+                <div class="header-1">Successfully deleted record!</div>
+            </div>
+            <div class="custom-modal-footer y-center top20">
+                <button class="btn default icon-right col45 icon-right">Okay <i class="bi bi-check"></i></button>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
     <script src="https://kit.fontawesome.com/10b39fbab5.js" crossorigin="anonymous"></script>
@@ -155,7 +211,7 @@
     <script src="scripts/scripts.js"></script>
     <script>
         $(document).ready(() => {
-            console.log( $("#add-child-form"));
+            console.log($("#add-child-form"));
             $("#add-child-form").on("click", function () {
                 const row = $('.child-form').eq(0);
                 const element = $(row).clone();

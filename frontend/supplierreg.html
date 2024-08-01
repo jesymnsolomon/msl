@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/bootstrap.css">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/default.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/style.less">
+    <link rel="stylesheet/less" type="text/css" href="../assets/styles/custom.less">
+</head>
+
+<body>
+    <div>
+        <div class="form-header">
+            <h2>Registration</h2>
+            <p class="grey-text">Create an account and register your supplier</p>
+        </div>
+        <div class="forms">
+            <div class="form-set flex col100">
+                <div class="form-step col30">
+                    <div class="form-step-name">Supplier</div>
+                    <div class="form-step-desc">Supplier's Info and Details</div>
+                </div>
+                <div class="form-group col70">
+                    <div class="form-group-row col70 flex">
+                        <div class="form-field col50">
+                            <div class="form-field-label">Company Owner</div>
+                            <input class="form-field-input" placeholder="Name of Owner" />
+                        </div>
+                        <div class="form-field col50">
+                            <div class="form-field-label">Email</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Email" />
+                                <i class="form-field-icon bi bi-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col70 flex">
+                        <div class="form-field col50">
+                            <div class="form-field-label">Owner's Phone Number</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Owner's Phone Number" />
+                                <i class="form-field-icon bi bi-telephone"></i>
+                            </div>
+                        </div>
+                        <div class="form-field col50">
+                            <div class="form-field-label">Entity Name</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Entity Name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col70 flex">
+                        <div class="form-field col100">
+                            <div class="form-field-label">Trading Name</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Trading Name" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col70 flex">
+                        <div class="form-field col100">
+                            <div class="form-field-label">Tell us about your business in 1-2 sentences*</div>
+                            <div class="x-center">
+                                <textarea class="form-field-input" placeholder="Trading Name"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col70 flex">
+                        <div class="form-field col100">
+                            <div class="form-field-label">Postal Address</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="Postal Address" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-row col70 flex">
+                        <div class="form-field col50">
+                            <div class="form-field-label">ABN*</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="ABN" />
+                            </div>
+                        </div>
+                        <div class="form-field col50">
+                            <div class="form-field-label">ACN</div>
+                            <div class="x-center">
+                                <input class="form-field-input" placeholder="ACN" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group form-set xy-center">
+            <button id="submit" class="btn default-2 icon-right">Submit <i class="bi bi-arrow-90deg-right"></i></button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less@3.13"></script>
+    <script src="https://kit.fontawesome.com/10b39fbab5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script>
+        $(document).ready(() => {
+            console.log($("#add-child-form"));
+            $("#add-child-form").on("click", function () {
+                const row = $('.child-form').eq(0);
+                const element = $(row).clone();
+                $(element).find("input").val("");
+                $(element).appendTo('.forms');
+            });
+        });
+    </script>
+</body>
+
+</html>

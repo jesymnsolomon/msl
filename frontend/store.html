@@ -25,6 +25,9 @@
             <div class="logo-container">
                 <img src="../assets/img/myschoollunchlogo.png" />
             </div>
+            <div class="nav-item nav-icon left-auto nav-cart nav-mobile-item">
+                <i class="bi bi-bag-heart"></i>
+            </div>
         </nav>
     </header>
     <div class="page-container">
@@ -225,6 +228,16 @@
                 `)
                 }
             }
+        });
+
+        $(".nav-cart").on("click", function() {
+           $(this).toggleClass("shown");
+
+           if($(this).hasClass("shown")) {
+            $(".sidebar").show();
+           } else {
+            $(".sidebar").hide();
+           }
         });
     </script>
 </body>

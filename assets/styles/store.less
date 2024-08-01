@@ -725,3 +725,66 @@
     transition: 0.8s;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .meal-deal-container {
+    .card.meal-deal {
+      max-width: calc(100% / 2);
+      min-width: calc(100% / 2);
+      padding: 10px;
+
+      .meal-deal-image {
+        max-height: 200px;
+        min-height: 150px;
+      }
+    }
+  }
+
+  .page-container-actions {
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    .x-center {
+      margin-bottom: 10px;
+    }
+
+    .input-icon-input[type="date"],
+    .input-icon-input,
+    .input-icon-input:focus-within {
+      min-width: 0;
+    }
+  }
+
+  .custom-modal {
+    width: 100% !important;
+    margin: 10px;
+
+    &-footer {
+      flex-direction: column;
+
+      .btn {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  .page-container {
+    margin-right: 0;
+
+    &-steps .page-step-label {
+      font-size: 13px;
+    }
+  }
+
+  .store-item-container {
+
+    .store-item {
+      width: calc((100% / 2) - 8px);
+
+      &:nth-of-type(even) {
+        margin-right: 0;
+      }
+    }
+  }
+}
